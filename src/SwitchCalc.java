@@ -1,7 +1,7 @@
 package src;
 import java.util.Scanner;
 
-public class Calc {
+public class SwitchCalc {
     private int result;
 
     public void calculate() {
