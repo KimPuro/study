@@ -2,7 +2,7 @@ package src;
 import java.util.Scanner;
 
 public class calc {
-    private int sum;
+    private int result;
 
     public void addNumbers() {
         Scanner scanner = new Scanner(System.in);
@@ -14,19 +14,19 @@ public class calc {
         var secondNumber = scanner.nextInt();
         switch (option) {
             case "+":
-                sum = firstNumber + secondNumber;
+                result = firstNumber + secondNumber;
                 break;
             case "-":
-                sum = firstNumber - secondNumber;
+                result = firstNumber - secondNumber;
                 break;
             case "*":
-                sum = firstNumber * secondNumber;
+                result = firstNumber * secondNumber;
                 break;
             case "/":
-                sum = firstNumber / secondNumber;
+                result = firstNumber / secondNumber;
                 break;
             case "%":
-                sum = firstNumber % secondNumber;
+                result = firstNumber % secondNumber;
                 break;
             default:
                 System.out.println("잘못된 입력입니다.");
@@ -34,7 +34,7 @@ public class calc {
         }
     }
 
-    public int getSum() {
-        return sum;
+    public int getResult() {
+        return result;
     }
 }
