@@ -1,10 +1,10 @@
 package src;
 import java.util.Scanner;
 
-public class calc {
+public class Calc {
     private int result;
 
-    public void addNumbers() {
+    public void calculate() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("하고 싶은 계산을 입력하세요 (+, -, *, /, % : )");
         var option = scanner.nextLine();
