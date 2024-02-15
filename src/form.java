@@ -1,6 +1,7 @@
+package src;
 import java.util.Scanner;
 
-public class Main {
+public class form {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.print("id를 입력하세요 :");
