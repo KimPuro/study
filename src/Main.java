@@ -1,9 +1,8 @@
 package src;
-
 public class Main {
     public static void main(String[] args) {
-        SwitchCalc calculator = new SwitchCalc();
+        var calculator = new SwitchCalc();
         calculator.calculate();
-        System.out.println("계산 결과는 : " + calculator.getResult());
+        System.out.println("계산 결과 : " + calculator.getResult());
     }
 }
