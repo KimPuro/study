@@ -1,17 +1,20 @@
 package src.kaupTest.kaupOOP;
+import src.memberOOP.Member;
+
 import java.util.Scanner;
 
 public class KaupView {
     public static void main(String[] args) {
-        Person person = new Person();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("당신의 몸무게를 입력하세요 : ");
-        System.out.println("당신의 키를 입력하세요 : ");
-        person.createM();
-        person.createBmi();
+        Member person = new Member(returnRandomCm(), returnRandomKg());
+        KaupService service = new KaupServiceImpl();
+        double bmi = service.createBmi();
+        String bodyMass = service.createBodyMass();
+        service.createBmi();
+        service.createBodyMass();
         System.out.println("m : " + person.getM());
         System.out.println("kg : " + person.getKg());
-        System.out.println("BMI : " + person.getBmi());
-        System.out.println("당신은 " + person.getBodyMass() + "입니다.");
+        System.out.println("BMI : " + bmi);
+        System.out.println("당신은 " + bodyMass + "입니다.");
     }
 }
